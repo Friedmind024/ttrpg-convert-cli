@@ -216,14 +216,18 @@ public class ImageRef {
 
             sourceUrl = java.net.URLDecoder.decode(sourceUrl, StandardCharsets.UTF_8);
 
-            boolean copyToVault = imageRoot.copyExternalToVault();
+            boolean copyToVault = false;
 
             if (sourceUrl.startsWith("http") || sourceUrl.startsWith("file")) {
                 sourceUrl = sourceUrl.replaceAll("^(https?):/+", "$1://");
+                copyToVault = imageRoot.copyExternalToVault();
             } else if (sourceUrl.startsWith("stream/")) {
                 copyToVault = true;
             } else {
-                sourceUrl = imageRoot.getRootPathUrl() + sourceUrl;
+                copyToVault = imageRoot.copyInternalToVault();
+                sourceUrl = copyToVault
+                        ? imageRoot.getRootPath() + sourceUrl
+                        : imageRoot.getRootPathUrl() + sourceUrl;
             }
 
             boolean localTargetSet = relativeTarget != null && vaultRoot != null && rootFilePath != null;
