@@ -44,6 +44,8 @@ public class UserConfig {
 
     Boolean useDiceRoller = null;
     Boolean yamlStatblocks = null;
+    Boolean racesAsSpecies = null;
+    Boolean splitRules = null;
 
     String tagPrefix = "";
 
@@ -73,6 +75,8 @@ public class UserConfig {
         sources(List.of("fullSource", "full-source", "convert")),
         tagPrefix,
         template,
+        racesAsSpecies,
+        splitRules,
         useDiceRoller,
         yamlStatblocks,
         ;

@@ -33,26 +33,26 @@
         <revision>399-SNAPSHOT</revision>
         <!-- Build -->
         <clean-plugin.version>3.5.0</clean-plugin.version>
-        <compiler-plugin.version>3.14.1</compiler-plugin.version>
+        <compiler-plugin.version>3.15.0</compiler-plugin.version>
         <maven.compiler.release>17</maven.compiler.release>
         <formatter-plugin.version>2.29.0</formatter-plugin.version>
-        <impsort-plugin.version>1.12.0</impsort-plugin.version>
+        <impsort-plugin.version>1.13.0</impsort-plugin.version>
         <javadoc-plugin.version>3.12.0</javadoc-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <surefire-plugin.version>3.5.4</surefire-plugin.version>
+        <surefire-plugin.version>3.5.5</surefire-plugin.version>
         <git-commit-id-plugin.version>9.0.2</git-commit-id-plugin.version>
         <skipTests>false</skipTests>
         <skipITs>true</skipITs>
         <!-- Quarkus -->
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-        <quarkus.platform.version>3.30.3</quarkus.platform.version>
+        <quarkus.platform.version>3.32.2</quarkus.platform.version>
         <!-- Libraries -->
-        <assertj.version>3.27.6</assertj.version>
-        <evalex.version>3.5.0</evalex.version>
+        <assertj.version>3.27.7</assertj.version>
+        <evalex.version>3.6.0</evalex.version>
         <github-slugify.version>3.0.7</github-slugify.version>
-        <icu4j.version>78.1</icu4j.version>        <!-- Optional dependency of Slugify -->
+        <icu4j.version>78.2</icu4j.version>        <!-- Optional dependency of Slugify -->
         <jsonschema-generator.version>4.38.0</jsonschema-generator.version>
         <hebi-sass.version>1.0.4</hebi-sass.version>
         <quarkus.package.jar.enabled>true</quarkus.package.jar.enabled>

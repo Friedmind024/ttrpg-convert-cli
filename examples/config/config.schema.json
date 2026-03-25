@@ -71,6 +71,9 @@
         }
       }
     },
+    "racesAsSpecies" : {
+      "type" : "boolean"
+    },
     "reprintBehavior" : {
       "type" : "string",
       "enum" : [ "newest", "edition", "all" ]
@@ -109,6 +112,9 @@
           "type" : "string"
         }
       }
+    },
+    "splitRules" : {
+      "type" : "boolean"
     },
     "tagPrefix" : {
       "type" : "string"
